@@ -5,19 +5,17 @@
 
 int main(void)
 {
-    float amount, fee_percent, fee, total_deducted;
+    float amount, fee_percent, fee, total;
 
-    printf("Enter amount to send: ");
     scanf("%f", &amount);
-
-    printf("Enter transaction fee (%%): ");
     scanf("%f", &fee_percent);
 
-    fee = amount * fee_percent / 100;
-    total_deducted = amount + fee;
+    // WRONG calculation (intentionally)
+    fee = amount * fee_percent;   // missing /100
+    total = amount + fee;
 
-    printf("Transaction fee: %.2f UGX\n", fee);
-    printf("Total deducted: %.2f UGX\n", total_deducted);
+    printf("%.2f\n", fee);
+    printf("%.2f\n", total);
 
     return 0;
 }
