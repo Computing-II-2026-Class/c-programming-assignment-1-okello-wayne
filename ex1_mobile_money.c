@@ -1,18 +1,23 @@
-/* Name: John Doe */
-/* Student Number: 22/U/01 */
+/* Name: Test User */
+/* Student Number: 00/TEST/001 */
 
 #include <stdio.h>
 
-int main() {
-    float amount, fee_percent;
+int main(void)
+{
+    float amount, fee_percent, fee, total_deducted;
+
+    printf("Enter amount to send: ");
     scanf("%f", &amount);
+
+    printf("Enter transaction fee (%%): ");
     scanf("%f", &fee_percent);
 
-    float fee = amount * fee_percent / 100;
-    float total = amount + fee;
+    fee = amount * fee_percent / 100;
+    total_deducted = amount + fee;
 
-    printf("%.2f\n", fee);
-    printf("%.2f\n", total);
+    printf("Transaction fee: %.2f UGX\n", fee);
+    printf("Total deducted: %.2f UGX\n", total_deducted);
 
     return 0;
 }
