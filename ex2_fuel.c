@@ -1,21 +1,15 @@
-/* Name: Test User */
-/* Student Number: 00/TEST/001 */
-
 #include <stdio.h>
 
 int main(void)
 {
-    float distance, fuel_used, efficiency;
+    float distance, fuel;
 
-    printf("Enter distance travelled (km): ");
     scanf("%f", &distance);
+    scanf("%f", &fuel);
 
-    printf("Enter fuel used (litres): ");
-    scanf("%f", &fuel_used);
+    float efficiency = distance / fuel;
 
-    efficiency = distance / fuel_used;
-
-    printf("Fuel efficiency: %.2f km/l\n", efficiency);
+    printf("%.2f\n", efficiency);
 
     return 0;
 }
