@@ -14,7 +14,7 @@ int main(void)
     fee = amount * fee_percent;   // missing /100
     total = amount + fee;
 
-    printf("%.2f\n", fee);
+    printf("%.3f\n", fee);
     printf("%.2f\n", total);
 
     return 0;
