@@ -1,4 +1,4 @@
-/* Name: Test User */
+/* Name: Shadai */
 /* Student Number: 00/TEST/001 */
 
 #include <stdio.h>
